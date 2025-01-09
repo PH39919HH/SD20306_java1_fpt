@@ -14,7 +14,9 @@ public class hocTap {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("buoi 2 hoc gi");
+        int number = 5;
+        String namme = "hello";
+        String num1 = new String();
+        
     }
-    
 }
