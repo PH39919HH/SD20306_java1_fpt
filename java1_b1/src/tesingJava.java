@@ -14,7 +14,7 @@ public class tesingJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("hello wold");
+        System.out.println("hello wold lol");
     }
     
 }
