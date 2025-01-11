@@ -47,6 +47,24 @@ public class Java_b3 {
         System.out.println("diem ly la:" + dl);
         System.out.println("diem hoa la:" + dh);
         //cau4
-            
+        System.out.println("Moi nhap thong tin ca nhan!");
+        System.out.println("Moi nhap mssv :");
+        String mssv1 = sc.nextLine();
+        System.out.println("Moi nhap ten :");
+        String ten1 = sc.nextLine();
+        System.out.println("Moi nhap tuoi :");
+        int tuoi = Integer.valueOf(sc.nextLine());
+        System.out.println("Moi nhap dia chi :");
+        String diachi = sc.nextLine();
+        System.out.println("Moi nhap ky hoc :");
+        int kyhoc = sc.nextInt();
+        System.out.println("Moi nhap nganh hoc :");
+        String nganhHoc1 = sc.nextLine();
+        System.out.println("MSSV cua ban la :" + mssv);
+        System.out.println("Ten cua ban la :" + ten);
+        System.out.println("Tuoi cua ban la :" + tuoi);
+        System.out.println("Dia chi cua ban la :" + diachi);
+        System.out.println("Ky hoc cua ban la :" + kyhoc);
+        System.out.println("Nganh cua ban la:" + nganhHoc1);
     }
 }
