@@ -28,7 +28,7 @@ public class Btvn1 {
         //cau2
         System.out.print("nhap diem toan:");
         int diemToan = sc.nextInt();
-        System.out.print("nhap diem ly");
+        System.out.print("nhap diem ly:");
         int diemly = sc.nextInt();
         System.out.print("nhap diem hoa");
         int diemHoa = sc.nextInt();
@@ -81,7 +81,30 @@ public class Btvn1 {
         double diemTB = tongDiem / tongHeSo;
         System.out.println("diem trung binh mon:" + diemTB);
         //cau7
-
+        //cau8
+        System.out.print("nhap so tu nhien:");
+        int n1 = sc.nextInt();
+        if (n1 % 2 == 0) {
+            System.out.println(n1+"la so chan");
+        } else {
+            System.out.println(n1+"la so le");
+        }
+        //cau9
+        int sum = 0;
+        System.out.print("nhap so nguyen:");
+        int n2 = sc.nextInt();
+        for (int i = 0; i < n2; i++) {
+            sum += i;
+        }
+        System.out.println("tong la:" +sum);
+        //cau10
+        System.out.print("nhap so nguyen:");
+        int n3 = sc.nextInt();
+        if (n3 % 2 != 0 && n3 % 5 == 0) {
+            System.out.println(n3 +"la so le chia het cho 5");
+        } else {
+            System.out.println(n3+"khong phai so le chia het cho 5");
+        }
     }
 
 }
