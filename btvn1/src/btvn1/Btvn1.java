@@ -39,6 +39,7 @@ public class Btvn1 {
         System.out.println("nhap thong tin minh:");
         System.out.print("nhap ten:");
         String tenL = sc.nextLine();
+        sc.nextLine();
         System.out.print("Nhap dia chi:");
         String diaChiL = sc.nextLine();
         System.out.print("Nhap nganh hoc:");

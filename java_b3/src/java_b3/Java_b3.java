@@ -34,8 +34,8 @@ public class Java_b3 {
         int cr = sc.nextInt();
         int P = 2 * (cd + cr);
         int S = cd * cr;
-        System.out.println("ket qua chu vi:" +P);
-        System.out.println("ket qua dien tich:" +S);
+        System.out.println("ket qua chu vi:" + P);
+        System.out.println("ket qua dien tich:" + S);
         //cau3
         System.out.println("nhap diem toan:");
         int dt = sc.nextInt();
@@ -43,11 +43,10 @@ public class Java_b3 {
         int dl = sc.nextInt();
         System.out.println("nhap diem hoa");
         int dh = sc.nextInt();
-        System.out.println("diem toan la:" +dt);
-        System.out.println("diem ly la:" +dl);
-        System.out.println("diem hoa la:" +dh);
+        System.out.println("diem toan la:" + dt);
+        System.out.println("diem ly la:" + dl);
+        System.out.println("diem hoa la:" + dh);
         //cau4
-        
+            
     }
-
 }
