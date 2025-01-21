@@ -17,6 +17,7 @@ public class Java1_b6 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //cau1
         System.out.print("moi may nhap:");
         int n = Integer.valueOf(sc.nextLine());
         int arr[] = new int[n];
@@ -28,6 +29,8 @@ public class Java1_b6 {
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
+        //cau2
+        System.out.println("nhap ");
     }
 
 }
