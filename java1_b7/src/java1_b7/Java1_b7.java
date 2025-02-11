@@ -30,7 +30,7 @@ public class Java1_b7 {
                     int b = Integer.valueOf(sc.nextInt());
                     int tong = a + b;
                     int tich = a * b;
-                    double thuong = a / b;
+                    double thuong = (double)a / b;
                     System.out.println("tong so nguyen: " + tong);
                     System.out.println("tich so nguyen: " + tich);
                     System.out.println("thuong so nguyen: " + thuong);
@@ -61,13 +61,31 @@ public class Java1_b7 {
                     System.out.println("tong so nguyen: "+sum);
                 }
                 case 4 -> {
-                    
+                    int tich= 1;
+                    System.out.print("nhap so nguyen n:");
+                    int n = Integer.valueOf(sc.nextInt());
+                    for (int i = 1; i < n; i+=2) {
+                        tich *=i;
+                    }
+                    System.out.println("tich so nguyen: "+tich);
                 }
                 case 5 -> {
-
+                    System.out.print("nhap mang:");
+                    int size = Integer.valueOf(sc.nextInt());
+                    int arr[] = new int[size];
+                    System.out.println("nhap cac phan tu mang:");
+                    for (int i = 0; i < size; i++) {
+                        arr[i] = Integer.valueOf(sc.nextInt());
+                        sc.nextLine();
+                    }
+                    System.out.println("mang theo chieu nguoc:");
+                    for (int i = size -1; i >= 0; i--) {
+                        System.out.println(arr[i]+" ");
+                    }
                 }
                 case 6 -> {
-
+//                    System.out.println("nhap mang:");
+//                    int 
                 }
                 case 7 -> {
 
