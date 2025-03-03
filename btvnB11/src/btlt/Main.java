@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package java1_b11;
+package btlt;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Mian {
+public class Main {
 
     /**
      * @param args the command line arguments
@@ -19,52 +19,43 @@ public class Mian {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        DienThoaiService sv = new DienThoaiService();
-        ArrayList<DienThoai> listDT = new ArrayList<>();
+        NguoiService sv = new NguoiService();
+        ArrayList<Nguoi> listN = new ArrayList<>();
         while (true) {
-            System.out.println("chon chuc nang:");
+            System.out.print("moi nhap chuc nang: ");
             int chucNang = Integer.valueOf(sc.nextLine());
             switch (chucNang) {
                 case 1 -> {
-                    sv.themDh(listDT);
+                    sv.ThemNguoi(listN);
                 }
                 case 2 -> {
-                    sv.InThongTinDienThoai(listDT);
+                    sv.inThongTinNguoi(listN);
                 }
                 case 3 -> {
-                    int gia = Integer.valueOf(sc.nextLine());
-                    sv.TimDienThoai(listDT, gia);
+                    sv.lietKeNu(listN);
                 }
-
                 case 4 -> {
-                    sv.NhapBoNho(listDT);
+                    int max = 0, min = 0;
+                    sv.lietKeNguoiThuTu(listN, max, min);
                 }
                 case 5 -> {
-                    sv.SapXepTangDanGia(listDT);
-                    sv.InThongTinDienThoai(listDT);
+                    sv.sapXepTangDanTheoTuoi(listN);
                 }
                 case 6 -> {
-                    sv.SapXepGiamDanGia(listDT);
-                    sv.InThongTinDienThoai(listDT);
+                    int vitTri = Integer.valueOf(sc.nextLine());
+                    sv.PayMauNguoiTheoViTri(listN, vitTri);
                 }
                 case 7 -> {
-                    int v = Integer.valueOf(sc.nextLine());
-                    sv.XoaDienThoaiViTri(listDT, v);
+                    sv.sapXepGiamDanTheoTen(listN);
                 }
-                case 8 -> {
-                    int ma = Integer.valueOf(sc.nextLine());
-                    sv.XoaDienThoaiMa(listDT, ma);
-                }
-
                 case 0 -> {
                     System.exit(0);
                 }
                 default -> {
-                    System.out.println("xin hay nhap lai");
+                    System.out.println("moi chon lai");
                 }
-
             }
         }
     }
-
+    //sua chuc nang 5,7
 }
